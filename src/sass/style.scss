@@ -1,0 +1,39 @@
+@forward "./variables";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--main-font);
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.flex-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cursor {
+  cursor: pointer;
+}

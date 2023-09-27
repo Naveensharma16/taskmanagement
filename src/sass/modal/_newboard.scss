@@ -1,0 +1,55 @@
+.modal-container {
+  position: relative;
+  &::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+}
+
+.add-board-form-container {
+  background-color: #fff;
+  width: min(500px, 85%);
+  border-radius: 10px;
+  padding: 30px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  input {
+    width: 100%;
+    display: block;
+    font-size: 1.1rem;
+    padding: 10px 5px;
+    border: 1px solid #000;
+  }
+  button.add-item {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    padding-block: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  button.close-modal {
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    padding: 0px;
+    img {
+      width: 20px;
+    }
+  }
+}

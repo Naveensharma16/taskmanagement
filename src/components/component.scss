@@ -1,0 +1,134 @@
+// All baords component css starts
+.board-list-container {
+  ul {
+    list-style: none;
+    color: var(--text-color-primary);
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    li {
+      margin-bottom: 15px;
+      padding: 13px 0px;
+      width: 80%;
+      justify-content: flex-start !important;
+      align-items: center !important;
+      gap: 5px;
+      img {
+        width: 20px;
+        display: inline-block;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        margin-left: 10px;
+        width: 12px;
+        img {
+          width: 100%;
+        }
+      }
+
+      &.active {
+        position: relative;
+        z-index: 1;
+        &::after {
+          content: "";
+          width: 110%;
+          display: block;
+          height: 100%;
+          padding: 15px 20px;
+          background-color: var(--board-add-text-color);
+          border-top-right-radius: 50px;
+          border-bottom-right-radius: 50px;
+          position: absolute;
+          top: 0px;
+          left: -20px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+// All baords component css ends
+
+// new-column component css starts
+.add-new-status {
+  width: min(90%, 250px);
+  background-color: var(--board-sidebar-header-color);
+  height: 85vh;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center !important;
+  color: var(--text-color-primary);
+  font-size: 1.8rem;
+}
+// new-column component css ends
+
+// task status component css starts
+.task-status-box {
+  @extend .add-new-status;
+  padding: 20px 20px;
+  position: relative;
+  h3 {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: normal;
+  }
+  .task-list {
+    margin-top: 20px;
+    h4 {
+      border: 1px solid #8b8b8b;
+      padding: 10px 15px;
+      background-color: var(--board-background-color);
+      border-radius: 10px;
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    width: 12px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .color-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  // .droppable-zone-box {
+  //   border: 2px dashed var(--add-task-background-color);
+  //   padding: 60px 0px;
+  //   text-align: center;
+  // }
+
+  .droppable-zone {
+    min-height: 60vh;
+  }
+}
+
+// task status component css ends
+
+// add new component css start
+
+.add-new-board {
+  background-color: transparent;
+  color: var(--board-add-text-color);
+  text-transform: capitalize;
+  word-spacing: 0.2rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  gap: 5px;
+}
+// add new component css ends

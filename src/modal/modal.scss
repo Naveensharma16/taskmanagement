@@ -1,0 +1,80 @@
+.modal-container {
+  width: min(90%, 500px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background-color: var(--board-sidebar-header-color);
+  padding: 20px 20px;
+  border-radius: 10px;
+  .add-board-form-container {
+    position: relative;
+    p {
+      color: var(--text-color-primary);
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+    span {
+      @extend p;
+      margin-bottom: 15px;
+      display: block;
+    }
+    input {
+      width: 100%;
+      border: 1px solid #fff;
+      background-color: #8b8b8b;
+      padding: 15px 10px;
+      font-size: 1.6rem;
+      color: #fff;
+      outline: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      @extend input;
+      height: 100px;
+    }
+
+    select {
+      @extend input;
+      text-transform: capitalize;
+    }
+
+    .remove-task {
+      background-color: transparent;
+      border: none;
+      width: 12px;
+      position: absolute;
+      top: 3px;
+      right: 45px;
+      img {
+        width: 100%;
+      }
+    }
+
+    button.add-item {
+      width: 100%;
+      padding: 15px 10px;
+      background-color: #9ba4b5;
+      border-radius: 5px;
+      border: none;
+      margin-top: 30px;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: normal;
+    }
+    button.close-modal {
+      background-color: transparent;
+      width: 30px;
+      border: none;
+      position: absolute;
+      top: -10px;
+      right: -5px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

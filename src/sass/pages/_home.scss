@@ -1,0 +1,15 @@
+.home-container {
+  display: flex;
+  .boards-menu {
+    width: 20%;
+  }
+
+  .site-main-content {
+    overflow-x: auto;
+  }
+
+  .board-status-holder {
+    display: flex;
+    gap: 20px;
+  }
+}

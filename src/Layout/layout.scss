@@ -1,0 +1,44 @@
+// css for header start
+.app-header-container {
+  background: var(--board-sidebar-header-color);
+  padding: 15px 20px;
+  width: 80%;
+  margin-left: auto;
+
+  .current-board-name {
+    font-size: 1.6rem;
+    color: var(--text-color-primary);
+    letter-spacing: 0.2rem;
+  }
+
+  .add-new-task {
+    button {
+      color: var(--text-color-primary);
+      background-color: var(--add-task-background-color);
+      padding: 8px 15px;
+      border: none;
+      border-radius: 20px;
+      text-transform: capitalize;
+      font-size: 1.4rem;
+    }
+  }
+}
+// css for header ends
+
+// css for sidebar start
+.sidebar-container {
+  background-color: var(--board-sidebar-header-color);
+  width: 20%;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  padding: 15px 20px;
+
+  .site-brand-logo {
+    margin-bottom: 40px;
+    img {
+      width: 190px;
+    }
+  }
+}
+// css for sidebar ends
